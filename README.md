@@ -1,56 +1,26 @@
-# Python & Machine Learning Portfolio
+# ML Classification Models
 
-Practical ML projects covering deep learning, data pipelines, and full-stack application development.
+Binary classification project using the Titanic dataset — feature engineering, model training, evaluation, and prediction export.
 
-## Projects
+## Approach
 
-### 1. MNIST Digit Recognition — CNN
+| Step | Details |
+|------|---------|
+| Data Exploration | Analyzed passenger demographics, ticket class distribution, survival rates |
+| Data Cleaning | Handled missing values (Age, Cabin, Embarked), dropped irrelevant columns |
+| Feature Engineering | Encoded categorical variables (Sex, Embarked), created derived features |
+| Model Training | Built classification model with train/test split |
+| Evaluation | Accuracy scoring, cross-validation |
+| Output | Predictions exported to `tested.csv` |
 
-Convolutional Neural Network trained on the MNIST dataset for handwritten digit classification.
+## Files
 
-| Component | Details |
-|-----------|---------|
-| Model | CNN with Conv2D, MaxPooling, Dense layers |
-| Training | MNIST dataset (60K train / 10K test images) |
-| Output | Saved model (`bestmodel.h5`) for inference |
-| App | Interactive prediction app (`app.py`) — upload an image and get the predicted digit |
-
-**Tech:** `Python` `TensorFlow/Keras` `NumPy` `OpenCV`
-
-**Files:** `MNIST.ipynb` · `bestmodel.h5` · `app.py`
-
----
-
-### 2. Railway Management System
-
-Full-stack database application for managing railway operations — booking, scheduling, and passenger records.
-
-| Component | Details |
-|-----------|---------|
-| Backend | Python application with SQL database integration |
-| Database | MySQL — tables for trains, passengers, bookings, schedules |
-| Features | Ticket booking, seat availability, train search, passenger management |
-
-**Tech:** `Python` `MySQL` `SQL`
-
-**Files:** `main.py` · `main_sql_file.sql`
-
----
-
-## How to Run
-
-```bash
-# MNIST Digit Recognition
-pip install tensorflow numpy opencv-python
-jupyter notebook MNIST.ipynb
-python app.py
-
-# Railway Management System
-# Import the database schema
-mysql -u root -p < main_sql_file.sql
-python main.py
-```
+| File | Description |
+|------|-------------|
+| `Titanic_Survuval_Pediction.ipynb` | Full notebook — EDA, preprocessing, model training, evaluation |
+| `tested.csv` | Model predictions on test data |
+| `Data Science_N.pdf` | Reference material |
 
 ## Tech Stack
 
-`Python` `TensorFlow` `Keras` `OpenCV` `NumPy` `Pandas` `MySQL` `Jupyter`
+`Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Jupyter`
